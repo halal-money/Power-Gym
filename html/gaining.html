@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Gym</title>
+    <link rel="icon" href="/icons/dumbbell.png">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/gaining.css">
+  </head>
+<body>
+    <header>
+
+        <div class="block">
+            <img  class="dumbbell" src="/icons/dumbbell.png" alt="Dumbbell">
+            <h3><a class="p_gym" href="/html/index.html">POWER GYM</a></h3>
+        </div>
+        <div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/html/aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/help.html">Help</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+        </div>
+
+        <div class="size">
+
+          
+            <div class="q_center">
+              <h1>Questions</h1>  
+            </div>
+              
+            
+              <div class="q1">
+                <h3>Q1. Your age:</h3>
+                <input type="radio" name="question1" value="18-24">18-24<br>
+                <input type="radio" name="question1" value="25-34">25-34<br>
+                <input type="radio" name="question1" value="35-44">35-44<br>
+  
+                <input type="button" id="submit" value="next question" onclick="showNextQuestion('.q2', 1)">
+              </div>
+  
+              <div class="q2">
+                <h3>Q2. Weight Gain Goals:</h3>
+                <input type="radio" name="question2" value="Gain 5-10 pounds">Gain 5-10 pounds<br>
+                <input type="radio" name="question2" value="Gain 10-20 pounds">Gain 10-20 pounds<br>
+                
+                <input type="button" id="prev2" value="previous question" onclick="showPrevQuestion('.q1', 2)" disabled>
+                <input type="button" id="submit2" value="next question" onclick="showNextQuestion('.q3', 2)" disabled>
+  
+              </div>
+  
+              <div class="q3">
+                <h3>Q3. Current Fitness Level:</h3>
+                <input type="radio" name="question3" value="1-6">1-6 (Moderate)<br>
+                <input type="radio" name="question3" value="7-10">7-10 (High)<br>
+            
+                <input type="button" id="prev3" value="previous question" onclick="showPrevQuestion('.q2', 3)">
+                <input type="button" id="submit3" value="next question" onclick="showNextQuestion('.q4', 3)">
+              </div>
+  
+
+  
+              <div class="q4">
+                <h3>Q4. Preferred Workout Frequency and Duration:</h3>
+                <input type="radio" name="question4" value="3 times a week (45 minutes each)">3 times a week (45 minutes each)<br>
+                <input type="radio" name="question4" value="4 times a week (60 minutes each)">4 times a week (60 minutes each)<br>
+          
+                <input type="button" id="prev4" value="previous question" onclick="showPrevQuestion('.q3', 4)">
+                <input type="button" id="submit4" value="submit" onclick="redirectToNewPage()">
+              </div>
+          </div>
+      
+          <div class="back_link">
+            <h3><a href="/html/purpose.html">Go Back</a></h3>
+          </div>
+
+
+
+
+    </header>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/gaining.js"></script>
+</body>
+</html>

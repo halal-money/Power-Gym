@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/* email page starts here */
+
+.block{
+    margin: 40px 0 0 60px ;
+    float: left;
+    width: 180px;
+    margin-right: -150px;
+}
+
+.dumbbell{
+    float: left;
+    width: 30px;
+    margin-right: 15px;
+}
+
+.p_gym{
+    color: #F8DE22;
+    font-family: 'Anton', serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.nav-link{
+    color: #fff;
+    font-family: 'Anton', serif;
+    width: 250px;
+    font-size: 30px;
+    padding-top: 33px;
+}
+
+.icon_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10vh;
+}
+
+.icon_size{
+    width: 100px;
+}
+
+.welcome{
+    color: #48D469;
+}
+
+.signing{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 3px solid #1D3764;
+    background-color: #fff;
+    width: 400px;
+    color: black;
+}
+
+.signin{
+    padding: 20px;
+}
+
+.line{
+    height: 3px;
+    background-color: black;
+}
+
+.mail{
+    padding-left: 20px;
+}
+   
+#email{
+    width:350px;
+}
+
+.container{
+    height: 50px;
+    padding: 0;
+}
+   
+.pass{
+    padding-left: 20px;
+}
+
+#password{
+    width: 350px;
+}
+
+#login{
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgba(254, 241, 96);
+}
+
+.or{
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* email page ends here */

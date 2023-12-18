@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/* what we offer page starts here */
+
+.block{
+    margin: 40px 0 0 60px ;
+    float: left;
+    width: 180px;
+    margin-right: -150px;
+}
+
+.dumbbell{
+    float: left;
+    width: 30px;
+    margin-right: 15px;
+}
+
+.p_gym{
+    color: #F8DE22;
+    font-family: 'Anton', serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.nav-link{
+    color: #fff;
+    font-family: 'Anton', serif;
+    width: 250px;
+    font-size: 30px;
+    padding-top: 33px;
+}
+
+.title{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.purpose{
+    color: yellow;
+    font-family: 'Anton', serif;
+    font-size: 80px;
+}
+
+.choose{
+    color: #fff;
+    font-size: 25px;
+}
+
+.images_container{
+    position: relative;
+}
+
+.dumbbells{
+    width: 400px;
+    height: 350px;
+}
+
+.inphoto{
+    color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.back_link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Gym</title>
+    <link rel="icon" href="/icons/dumbbell.png">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/losing.css">
+</head>
+<body>
+    <header>
+
+        <div class="block">
+            <img  class="dumbbell" src="/icons/dumbbell.png" alt="Dumbbell">
+            <h3><a class="p_gym" href="/html/index.html">POWER GYM</a></h3>
+        </div>
+        <div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/html/aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/help.html">Help</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+        </div>
+
+
+        <div class="size">
+
+          <div class="q_center">
+            <h1>Questions</h1>  
+          </div>
+            
+            <div class="q1">
+              <h3>Q1. Your age:</h3>
+              <input type="radio" name="question1">18-24<br>
+              <input type="radio" name="question1">25-34<br>
+              <input type="radio" name="question1">35-44<br>
+              <input type="radio" name="question1">45-54<br>
+
+              <input type="button" id="submit" value="next question" onclick="showNextQuestion('.q2', 1)">
+            </div>
+
+            <div class="q2">
+              <h3>Q2. Weight Loss Goals:</h3>
+              <input type="radio" name="question2">Lose 5-10 pounds<br>
+              <input type="radio" name="question2">Lose 10-20 pounds<br>
+              <input type="radio" name="question2">Lose 20-30 pounds<br>
+              <input type="radio" name="question2">Maintain current weight<br>
+              
+              <input type="button" id="prev2" value="previous question" onclick="showPrevQuestion('.q1', 2)" disabled>
+              <input type="button" id="submit2" value="next question" onclick="showNextQuestion('.q3', 2)" disabled>
+
+            </div>
+
+            <div class="q3">
+              <h3>Q3. Current Fitness Level:</h3>
+              <input type="radio" name="question3">1-3 (Low)<br>
+              <input type="radio" name="question3">4-6 (Moderate)<br>
+              <input type="radio" name="question3">7-8 (High)<br>
+              <input type="radio" name="question3">9-10 (Very High)<br>
+          
+              <input type="button" id="prev3" value="previous question" onclick="showPrevQuestion('.q2', 3)">
+              <input type="button" id="submit3" value="next question" onclick="showNextQuestion('.q4', 3)">
+            </div>
+
+            <div class="q4">
+              <h3>Q4. Exercise Preferences:</h3>
+              <input type="radio" name="question4">Cardiovascular exercises<br>
+              <input type="radio" name="question4">Combination of cardio and strength training<br>
+              <input type="radio" name="question4">Flexibility and stretching exercises<br>
+              <input type="radio" name="question4">Strength training for muscle building<br>
+          
+              <input type="button" id="prev4" value="previous question" onclick="showPrevQuestion('.q3', 4)">
+              <input type="button" id="submit4" value="next question" onclick="showNextQuestion('.q5', 4)">
+
+            </div>
+
+            <div class="q5">
+              <h3>Q5. Preferred Workout Frequency and Duration:</h3>
+              <input type="radio" name="question5">3 times a week (45 minutes each)<br>
+              <input type="radio" name="question5">4 times a week (60 minutes each)<br>
+              <input type="radio" name="question5">5 times a week or more<br>
+              <input type="radio" name="question5">Flexible, depends on the week<br>
+        
+              <input type="button" id="prev5" value="previous question" onclick="showPrevQuestion('.q4', 5)">
+              <input type="button" id="submit5" value="submit">
+            </div>
+          </div>
+
+          <div class="back_link">
+            <h3><a href="/html/purpose.html">Go Back</a></h3>
+          </div>
+
+
+
+
+    </header>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/losing.js"></script>
+</body>
+</html>

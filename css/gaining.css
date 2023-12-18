@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/* what we offer page starts here */
+
+.block{
+    margin: 40px 0 0 60px ;
+    float: left;
+    width: 180px;
+    margin-right: -150px;
+}
+
+.dumbbell{
+    float: left;
+    width: 30px;
+    margin-right: 15px;
+}
+
+.p_gym{
+    color: #F8DE22;
+    font-family: 'Anton', serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.nav-link{
+    color: #fff;
+    font-family: 'Anton', serif;
+    width: 250px;
+    font-size: 30px;
+    padding-top: 33px;
+}
+
+.size{
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    margin-top: 14vh;
+    color: #fff;
+    padding: 20px;
+    font-size: 40px
+}
+
+.q_center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.q2, .q3, .q4, .q5 {
+    display: none;
+    margin-bottom: 20px;
+}
+
+
+input[type="button"] {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 120px; 
+    margin-top: 70px;
+
+}
+
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+.back_link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
